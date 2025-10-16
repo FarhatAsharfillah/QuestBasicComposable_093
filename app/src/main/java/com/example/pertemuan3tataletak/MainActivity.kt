@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.mylayout.ui.theme.MyLayoutTheme
+
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,11 +21,11 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize()
                 ) { innerPadding ->
-                // Composable Layout sesuai dengan padding dari Scaffold
-                TataletakBoxColumnRow(
-                modifier = Modifier.padding(paddingValues = innerPadding)
-                )
-            }
+                    // Composable Layout sesuai dengan padding dari Scaffold
+                    TataletakBoxColumnRow(
+                        modifier = Modifier.padding(paddingValues = innerPadding)
+                    )
+                }
             }
         }
     }
@@ -36,7 +37,9 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Pertemuan3TataLetakTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
+                Scaffold(
+                    modifier = Modifier.fillMaxSize()
+                ) { innerPadding ->
                     Greeting(
                         name = "Android",
                         modifier = Modifier.padding(innerPadding)

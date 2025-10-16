@@ -147,3 +147,26 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         Spacer(modifier = Modifier.height(height = 10.dp))
 
 // Box Cyan (Utama)
+        Box(
+            modifier = modifier
+                .fillMaxWidth() // Asumsi dari .fillMax() [cite: 19]
+                .height(500.dp)
+        .background(color = Color.Cyan),
+        contentAlignment = Alignment.Center
+        ) {
+        Image(
+            painter = gambar,
+        contentDescription = null,
+        contentScale = ContentScale.Fit
+        )
+        Text(
+            text = "My Layout",
+        fontSize = 50.sp,
+        color = Color.Red,
+        fontWeight = FontWeight.Bold,
+        fontFamily = FontFamily.Cursive,
+        modifier = Modifier.align(Alignment.Center)
+        )
+    }
+    }
+}
