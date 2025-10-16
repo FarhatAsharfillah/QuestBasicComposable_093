@@ -1,5 +1,5 @@
 package com.example.pertemuan3tataletak.ui.theme
-package com.example.mylayout
+
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -23,6 +23,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.TataLetak.R
 
 
 
@@ -112,7 +113,7 @@ fun TataletakRowColumn2(modifier: Modifier) {
 
 @Composable
 fun TataletakBoxColumnRow(modifier: Modifier) {
-    val gambar = painterResource(id = R.drawable.notasinaton)
+    val gambar = painterResource(id = R.drawable.notasibalok.png)
 
     Column {
         // Box Kuning (Header)
