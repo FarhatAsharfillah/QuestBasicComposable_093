@@ -120,3 +120,15 @@ fun TataletakBoxColumnRow(modifier: Modifier) {
         ) {
             // Konten Box Kuning (Kosong dalam sumber)
         }
+
+        // Column Bersarang (Dua Baris)
+        Column {
+            // Baris 1
+            Row(
+                modifier = modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceEvenly
+            ) {
+                Text(text = "Col 1 Row 1 Komponen 1")
+                Text(text = "Col 1 Row 1 Komponen 2")
+                Text(text = "Col 1 Row 1 Komponen 3")
+            }
