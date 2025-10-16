@@ -105,3 +105,18 @@ Fun TataletakRowColumn(modifier: Modifier) {
         }
     }
 }
+
+@Composable // Tambahan: Asumsi @Composable
+fun TataletakBoxColumnRow(modifier: Modifier) {
+    val gambar = painterResource(id = R.drawable.notasinaton)
+
+    Column {
+        // Box Kuning (Header)
+        Box(
+            modifier = modifier
+                .height(110.dp)
+        .background(color = Color.Yellow),
+        contentAlignment = Alignment.Center
+        ) {
+            // Konten Box Kuning (Kosong dalam sumber)
+        }
